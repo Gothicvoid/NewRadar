@@ -1,0 +1,3 @@
+# NewRadar
+It's just the upgraded FFScanner. Some shit happened, causing errors when I tried to upload to the original repository,
+I have no choice but to create a new one...
