@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/friends_list_item_background"
+	android:paddingTop="10dp"
+	android:paddingRight="10dp"
+	android:paddingLeft="40dp">
+
+	<TextView
+		android:id="@+id/name_cell"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:textColor="#39b54a"
+		android:paddingTop="3dp"
+		android:paddingLeft="10dp"
+		android:textSize="18dp"
+		android:layout_gravity="center_vertical" />
+
+	<Button
+		android:id="@+id/delete_button_cell"
+		android:layout_width="52dp"
+		android:layout_height="wrap_content"
+		android:background="@drawable/button_list_delete_def"
+		android:layout_alignParentRight="true" />
+
+</RelativeLayout>

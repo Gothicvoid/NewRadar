@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:id="@+id/vgp_friends_list_header"
+		android:background="@drawable/friends_list_header"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="10px"
+		android:paddingRight="10px"
+		android:paddingTop="8px">
+
+		<Button
+			android:id="@+id/btn_friends_list_add"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/button_friends_list_add_def"
+			android:layout_alignParentLeft="true" />
+
+		<ToggleButton
+			android:id="@+id/btn_friends_list_edit"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/button_friends_list_edit_def"
+			android:layout_alignParentRight="true"
+			android:textOff=""
+			android:textOn=""/>
+
+	</RelativeLayout>
+
+	<ListView
+		android:id="@+id/lvw_friends_list"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="#000000"
+		android:layout_weight="1" />
+
+	<RelativeLayout
+		android:id="@+id/vgp_friends_list_footer"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/list_footer"
+		android:padding="5px">
+
+		<Button
+			android:id="@+id/btn_friends_list_radar"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/button_radar_def"
+			android:layout_alignParentLeft="true" />
+
+		<Button
+			android:id="@+id/btn_friends_list_enemies"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/button_enemies_def"
+			android:layout_alignParentRight="true" />
+
+	</RelativeLayout>
+
+</LinearLayout>

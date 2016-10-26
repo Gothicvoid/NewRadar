@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:orientation="vertical"
+   android:background="@drawable/dialog_delete_friend"
+   android:paddingLeft="50px"
+   android:paddingTop="100px">
+   
+   <LinearLayout
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+   android:orientation="horizontal"
+   android:paddingLeft="30px"
+   android:paddingTop="85px">
+   
+   	<TextView android:id="@+id/txt_friend_number_label"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:text="NUMBER: "/>
+	
+	<!--The text is hard-coded here but will be set programatically in code in final assembly-->
+	<TextView android:id="@+id/txt_friend_number"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:text="1234567890"/>
+	     
+   </LinearLayout>
+   
+   <LinearLayout
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+   android:orientation="horizontal"
+   android:paddingLeft="65px">
+	  
+	<Button
+	  android:id="@+id/btn_dialog_ok"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:background="@drawable/dialog_ok_def"
+	  android:layout_marginRight="10px"/>
+	  
+	<Button
+	  android:id="@+id/btn_dialog_close"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:background="@drawable/dialog_close_def"/>
+	  
+	</LinearLayout>  	    
+</LinearLayout>

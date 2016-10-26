@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center_horizontal">
+
+	<LinearLayout
+		android:id="@+id/header"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/vgp_center"
+		android:background="@drawable/radar_header"
+		android:layout_alignParentTop="true" />
+
+	<com.baidu.mapapi.map.TextureMapView
+		android:id="@+id/bmapView"
+		android:clickable="true"
+		android:layout_above="@+id/vgp_footer"
+		android:layout_below="@id/header"
+		android:layout_gravity="center"
+		android:layout_height="420dp"
+		android:layout_width="fill_parent"/>
+
+	<FrameLayout
+		android:id="@+id/vgp_center"
+		android:layout_centerInParent="true"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<RelativeLayout
+			android:layout_gravity="center"
+			android:layout_height="420dp"
+			android:layout_width="fill_parent">
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:background="@drawable/centre_radar_original"
+			android:layout_gravity="center"
+			android:layout_height="420dp"
+			android:layout_width="wrap_content">
+
+			<Button
+				android:id="@+id/btn_locate"
+				android:layout_width="60dp"
+				android:layout_height="60dp"
+				android:background="@drawable/button_locate_def"
+				android:layout_alignParentTop="true"
+				android:layout_alignParentLeft="true" />
+
+			<ToggleButton
+				android:id="@+id/btn_refresh"
+				android:layout_width="60dp"
+				android:layout_height="60dp"
+				android:background="@drawable/button_refresh_def"
+				android:layout_alignParentTop="true"
+				android:layout_alignParentRight="true"
+				android:textOff=""
+				android:textOn="" />
+
+			<ImageView
+				android:id="@+id/imageview_sweep"
+				android:layout_marginTop="89dp"
+				android:layout_marginLeft="59dp"
+				android:layout_height="120dp"
+				android:layout_width="120dp"
+				android:src="@drawable/radar_sweep"/>
+
+		</RelativeLayout>
+
+	</FrameLayout>
+
+	<RelativeLayout
+		android:id="@+id/vgp_footer"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/vgp_center"
+		android:background="@drawable/list_footer"
+		android:layout_alignParentBottom="true">
+
+		<Button
+			android:id="@+id/btn_friends"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/button_friends_def"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true" />
+
+		<Button
+			android:id="@+id/btn_enemies"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/button_enemies_def"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true" />
+
+	</RelativeLayout>
+
+</RelativeLayout>
